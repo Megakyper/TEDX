@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"TEDx|IIT-Bhubaneshwar|2024"</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        let btn = document.getElementsByClassName('navbar-toggler')
+        let menu = document.getElementById('navbarNavDropdown')
+        btn[0].addEventListener("click", () => {
+            if (menu.classList.contains('actived')) {
+                menu.classList.add('deactive');
+                setTimeout(() => {
+                    menu.classList.remove('actived')
+                    menu.style.display = 'none'
+                }, 200);
+            } else {
+                menu.style.display = 'block'
+                menu.classList.add('actived');
+                setTimeout(() => {
+                    menu.classList.remove('deactive')
+                }, 200);
+            }
+        });
+        let bots = document.getElementsByClassName('ted');
+        let first = document.getElementById('first');
+        let second = document.getElementById('second')
+        bots[0].addEventListener("click", () => {
+            first.style.display = "flex"
+            second.style.transform = "scaleX(0)"
+            setTimeout(() => {
+                first.style.transform = "scaleX(1)"
+            }, 100);
+            second.style.display = "none"
+        })
+        bots[1].addEventListener("click", () => {
+            second.style.display = "flex"
+            first.style.transform = "scaleX(0)"
+            setTimeout(() => {
+                second.style.transform = "scaleX(1)"
+            }, 100);
+            first.style.display = "none"
+        })
+    })
+</script>
+
+<body style="height: 100vh;background: black;">
+
+    <nav class="navbar navbar-expand-lg glass-morph navbar-dark"
+        style="display: flex;width: 100vw;background-color: black;padding: 0;position: fixed;">
+        <a class="navbar-brand" href="#" id="main-logo">
+            <img src="./logo.png" style="width: 20vw;height: auto;" class="d-inline-block align-top" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+            style="justify-self: flex-end;margin: 3.4vw;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" navbar-collapse" id="navbarNavDropdown" style="transform-origin: top;">
+            <ul class="navbar-nav" style="justify-content: space-around;position: absolute;background-color: black;">
+                
+                <li class="nav-item">
+                    <a class="navbar-brand" style="font-size: max(1.5vw,2.75vh);" href="./pages/about_us/">
+                        <span style="color: white">THEME</span>
+                        <span class="title" style="color: white">THEME</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" style="font-size: max(1.5vw,2.75vh);" href="#">
+                        <span style="color: white">ABOUT TEDX</span>
+                        <span class="title" style="color: white">ABOUT TEDX</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" style="font-size: max(1.5vw,2.75vh);" href="#">
+                        <span style="color: white">SPEAKERS</span>
+                        <span class="title" style="color: white">SPEAKERS</span>
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" style="font-size: max(1.5vw,2.75vh);" href="./pages/competitions/">
+                        <span style="color: white">REASONS TO ATTEND</span>
+                        <span class="title" style="color: white">REASONS TO ATTEND</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./pages/reach_Us/" class="navbar-brand" style="font-size: max(1.5vw,2.75vh);"
+                        href="./pages/reach_Us/index.html">
+                        <span style="color: white">ORGANIZERS</span>
+                        <span class="title" style="color: white">ORGANIZERS</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="start">
+        <h3 class="wiss">WISSENAIRE BRINGS YOU</h3>
+        <h1 class="theme">Echoes of Experience: Stories That Shape Us</h1>
+        <button class="btns"> Button
+        </button>
+    </div>
+    <div id="about">
+        <div class="data half" style="color: white;">
+            <h1 style="color: red;">Echoes of Experience: Stories That Shape Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facilis consequuntur tempora eum
+                dignissimos nisi provident. Iste, quidem ducimus dignissimos repellat officiis rerum? Nam, porro vitae
+                magnam officiis quia, incidunt impedit facere sit dicta inventore ex harum tempore? Incidunt molestiae,
+                iure dolore at quas corporis repellendus ex odio harum corrupti. Cum expedita aperiam placeat distinctio
+                incidunt quia sunt, inventore voluptate esse sed natus qui quas laudantium omnis illum quae ducimus
+                obcaecati blanditiis. Iure unde laboriosam iusto minus odio voluptatibus, praesentium veritatis aut esse
+                delectus suscipit illum enim odit, sequi possimus quibusdam, quasi deserunt. Aut possimus recusandae
+                repellat adipisci illo praesentium!</p>
+        </div>
+        <img src="./logo.png" alt="" class="half " id="img">
+    </div>
+    <div class="tedx" style="background-color: white;">
+        <div class="buttons">
+            <button class="ted">WHAT IS TED?</button>
+            <button class="ted"> WHAT IS TEDX?</button>
+        </div>
+        <div class="matter" id="first">
+            <img src="./tedx.jpeg" alt="" class="te">
+            <p>nsbvi usrifygea igeibihd bvjhsjvs hfiuwg fibibw ifbaiuh vouwaugg u hw fwouowe owiw o w owo hwohw oi
+                wowohwoh
+                wohvwqoo wffow w of hwo jeipgjeoi ho hoeo e oiissos w hgwoief wwhoiwog w hww piwp owe wo iwfowewoihwo
+                hggr o d oenrnv oihoihoi wjoiw jshoighdjgn'e regighs ;h;l ss s;og ;;ghdghhggr o d oenrnv oihoihoi wjoiw
+                jshoighdjgn'ehggr o d oenrnv oihoihoi wjoiw jshoighdjgn'ehggr o d oenrnv oihoihoi wjoiw
+                jshoighdjgn'ehggr o d oenrnv oihoihoi wjoiw jshoighdjgn'e</p>
+        </div>
+        <div class="matter" id="second">
+            <img src="./tedx.jpeg" alt="" class="ted">
+            <p> bghdjgn'ehggr o d oenrnv oihoihoi wjoiw
+                jshoighdjgn'ehggr o d oenrnv oihoihoi wjoiw jshoighdjgn'eghdjgn'ehggr o d oenrnv oihoihoi wjoiw
+                jshoighdjgn'ehggr o d oenrnv oihoihoi wjoiw jshoighdjgn'e</p>
+        </div>
+    </div>
+
+    <section class="reason">
+        <h1>REASONS TO ATTEND</h1>
+        <div class="rs-cards">
+            <div class="rss">
+                <img src="tedx.png">
+                <p>KNOW DIVERSE IDEAS</p>
+            </div>
+            <div class="rss">
+                <img src="tedx.png">
+                <p>NETWORKING OPPORTUNITY</p>
+            </div>
+            <div class="rss">
+                <img src="tedx.png">
+                <p>INSPIRATIONAL PERFORMANCE</p>
+            </div>
+            <div class="rss">
+                <img src="tedx.png">
+                <p>EXPERIENCE TO CHERISH</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="cont">
+            <div class="one">
+                <img src="./logo.png">
+                <p>tedxiitbhubaneswar@gmail.com</p>
+                <p><a>linkedin</a></p>
+                <p><a>Instagram</a></p>
+                <br>
+                <p1><a>Link to Ted</a></p1>
+                <br>
+                <p1><a>Link to TedX</a></p1>
+            </div>
+            <div class="second">
+                <h1>ADDRESS</h1>
+                <p>IIT Bhubaneswar</p>
+                <p>Auditorium, Argul-Jatni Rd</p>
+                <p>Kanasapada, Odisha, India 752050</p>
+                <br>
+                <h1>EVENT DATE</h1>
+                <p>10/02/2024</p>
+            </div>
+            <div class="third">
+                <h1>LICENSE HOLDER</h1>
+                <p>Koushik Kumar Kamsali</p>
+                <p>kkk14@iitbbs.ac.in</p>
+                <p><a>linkedin</a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <hr>
+            <p style="padding: 0;margin: 0;" >© COPYRIGHT 2024 BY TEDx IIT BHUBANESHWAR | DESIGNED AND DEVELOPED BY WISSENAIRE WEB TEAM |</p>
+            <p>THIS INDEPENDENT TEDX EVENT IS OPERATED UNDER LICENSE FROM TED.</p>
+        </div>
+    </section>
+</body>
+
+</html>
